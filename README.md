@@ -1,7 +1,7 @@
 mypackage
 =========
 
-An template for Python packages
+An template for Python packages.
 
 Usage
 -----

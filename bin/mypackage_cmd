@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+"""Commandline tool example. Run like: mypackage_cmd hello"""
+
+import argparse
+import mypackage
+
+def parse_args():
+    """Parse arguments."""
+    description = ('What my commandline tool does')
+    parser = argparse.ArgumentParser(description=description)
+    parser.add_argument("echo", help="echo the string you use here")
+
+    args = parser.parse_args()
+    return args
+
+def main():
+    """Main"""
+    print(mypackage.my_function())
+    args = parse_args()
+
+    print(args.echo)
+
+if __name__ == '__main__':
+    main()
